@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; img-src 'self' data:; font-src 'self';" />
+  <title>Ember 🔥 — keep your friendships warm</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-blobs" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <a href="story.html" class="story-banner">📖 read the story behind Ember — how it works &amp; why it exists <span>→</span></a>
+
+  <header class="topbar">
+    <div class="logo">
+      <span class="logo-flame">🔥</span>
+      <div>
+        <h1>Ember</h1>
+        <p class="tagline">friendships fade quietly — don't let yours go cold ✨</p>
+      </div>
+    </div>
+    <div class="topbar-actions">
+      <button id="btn-report" class="btn ghost" title="Copy a check-in list to share with yourself">📋 report</button>
+      <button id="btn-export" class="btn ghost" title="Download CSV / backup">⬇️ export</button>
+      <button id="btn-add" class="btn primary">+ add friend</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- circle health + stats -->
+    <section class="stats" id="stats"></section>
+
+    <!-- nudge alert strip -->
+    <section id="alert-strip" class="alert-strip hidden"></section>
+
+    <!-- controls -->
+    <section class="controls">
+      <input type="search" id="search" placeholder="🔎 search your circle…" autocomplete="off" />
+      <div class="filters" id="filters">
+        <button class="chip active" data-filter="all">all</button>
+        <button class="chip" data-filter="attention">needs attention 🥺</button>
+        <button class="chip" data-filter="thriving">thriving 🔥</button>
+        <button class="chip" data-filter="archived">archived 📦</button>
+      </div>
+    </section>
+
+    <!-- friend grid -->
+    <section id="friend-grid" class="friend-grid"></section>
+
+    <!-- empty state -->
+    <section id="empty-state" class="empty-state hidden">
+      <div class="empty-emoji">🕯️</div>
+      <h2>no embers lit yet</h2>
+      <p>add the people you don't want to lose touch with — Ember will nudge you before they go cold.</p>
+      <button class="btn primary" id="btn-empty-add">+ add your first friend</button>
+    </section>
+  </main>
+
+  <!-- add/edit friend modal -->
+  <dialog id="modal">
+    <form id="friend-form" method="dialog" novalidate>
+      <div class="modal-head">
+        <h2 id="modal-title">add a friend</h2>
+        <button type="button" class="btn-close" id="btn-close-modal" aria-label="Close">✕</button>
+      </div>
+
+      <div class="form-grid">
+        <label class="span2">
+          <span>name</span>
+          <div class="name-row">
+            <input type="text" id="f-emoji" maxlength="4" placeholder="🙂" aria-label="Emoji avatar" />
+            <input type="text" id="f-name" required maxlength="60" placeholder="e.g. Priya" />
+          </div>
+        </label>
+
+        <label>
+          <span>how close are you?</span>
+          <select id="f-relationship">
+            <option value="bestie">💛 bestie — stay in daily-ish touch</option>
+            <option value="close" selected>🧡 close friend — every ~2 weeks</option>
+            <option value="friend">🩵 friend — monthly check-in</option>
+            <option value="family">💜 like family — every 3 weeks</option>
+            <option value="acquaintance">🤍 acquaintance — every couple months</option>
+            <option value="custom">⚙️ custom cadence</option>
+          </select>
+        </label>
+
+        <label id="wrap-custom-days" class="hidden">
+          <span>check in every how many days?</span>
+          <input type="number" id="f-custom-days" min="1" max="365" placeholder="21" />
+        </label>
+
+        <label>
+          <span>last time you two connected</span>
+          <input type="date" id="f-lastcontact" required />
+        </label>
+
+        <label class="span2">
+          <span>notes (their vibe, what they're into, inside jokes…)</span>
+          <input type="text" id="f-notes" maxlength="200" placeholder="e.g. just started a new job, loves hearing about the dog" />
+        </label>
+      </div>
+
+      <div class="modal-actions">
+        <button type="button" id="btn-archive" class="btn ghost hidden">📦 archive</button>
+        <button type="button" id="btn-delete" class="btn danger hidden">🗑 delete</button>
+        <span class="spacer"></span>
+        <button type="submit" class="btn primary" id="btn-save">save 💾</button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- log check-in modal -->
+  <dialog id="log-modal">
+    <div class="modal-head">
+      <h2 id="log-modal-title">log a check-in</h2>
+      <button type="button" class="btn-close" id="btn-close-log" aria-label="Close">✕</button>
+    </div>
+    <form id="log-form" method="dialog" novalidate>
+      <div class="type-row" id="log-type-row">
+        <button type="button" class="type-chip active" data-type="text">💬 text</button>
+        <button type="button" class="type-chip" data-type="call">📞 call</button>
+        <button type="button" class="type-chip" data-type="hangout">☕ hangout</button>
+        <button type="button" class="type-chip" data-type="event">🎉 event</button>
+        <button type="button" class="type-chip" data-type="birthday">🎂 birthday</button>
+        <button type="button" class="type-chip" data-type="other">✨ other</button>
+      </div>
+      <label>
+        <span>when</span>
+        <input type="date" id="log-date" required />
+      </label>
+      <label>
+        <span>note (optional)</span>
+        <input type="text" id="log-note" maxlength="140" placeholder="e.g. caught up over the new job" />
+      </label>
+      <div class="modal-actions">
+        <span class="spacer"></span>
+        <button type="submit" class="btn primary">log it 🔥</button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- export modal -->
+  <dialog id="export-modal">
+    <div class="modal-head">
+      <h2>export / backup</h2>
+      <button type="button" class="btn-close" id="btn-close-export" aria-label="Close">✕</button>
+    </div>
+    <div class="export-options">
+      <button class="btn ghost big" id="btn-csv">📊 download CSV<small>friends, scores, last contact — open in Sheets</small></button>
+      <button class="btn ghost big" id="btn-json">🗄 download backup (JSON)<small>full backup, including check-in history</small></button>
+      <button class="btn ghost big" id="btn-import">📥 import backup<small>restore from a JSON backup file</small></button>
+      <input type="file" id="file-import" accept="application/json,.json" class="hidden" />
+    </div>
+  </dialog>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <footer>
+    <p>🔥 Ember — your circle, your device. Nothing ever leaves this browser. <span id="friend-count"></span></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; img-src 'self' data:; font-src 'self';" />
+  <title>The Story Behind Ember 🔥</title>
+  <link rel="stylesheet" href="story.css" />
+</head>
+<body>
+  <canvas id="ember-canvas"></canvas>
+
+  <nav class="story-nav">
+    <a href="index.html" class="back-link">← back to Ember</a>
+    <a href="index.html" class="try-link">try the app →</a>
+  </nav>
+
+  <main>
+    <section class="hero reveal">
+      <p class="eyebrow">a case study</p>
+      <h1>Friendships don't end.<br /><em>They fade.</em></h1>
+      <p class="hero-sub">
+        No fight, no falling out — just a text that never got sent, then another, then a year.
+        Ember is the small app I built to catch that fade before it finishes.
+      </p>
+      <div class="hero-actions">
+        <a href="index.html" class="btn-hero primary">Open Ember →</a>
+        <a href="#problem" class="btn-hero ghost">Read the story ↓</a>
+      </div>
+    </section>
+
+    <section id="problem" class="section reveal">
+      <p class="eyebrow">the problem</p>
+      <h2>You don't lose people in an argument.<br />You lose them in silence.</h2>
+      <p class="lede">
+        Adult life is a machine for quietly erasing friendships. Everyone's busy, everyone means well, and nobody
+        decides to drift apart on purpose — it just happens between calendar invites. By the time you notice, the
+        friendship isn't broken. It's just <em>cold</em>.
+      </p>
+      <div class="glass-row">
+        <div class="glass-card">
+          <span class="glass-emoji">📅</span>
+          <h3>Busy ≠ don't care</h3>
+          <p>The people who matter most get the least deliberate attention, because urgent always beats important.</p>
+        </div>
+        <div class="glass-card">
+          <span class="glass-emoji">🙈</span>
+          <h3>No warning system</h3>
+          <p>Your phone reminds you about everything except the friendship that's been quietly cooling for months.</p>
+        </div>
+        <div class="glass-card">
+          <span class="glass-emoji">😶</span>
+          <h3>Guilt keeps it frozen</h3>
+          <p>The longer the silence, the harder the first message feels — so it keeps getting pushed another week.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="idea" class="section reveal">
+      <p class="eyebrow">the idea</p>
+      <h2>Treat friendships like embers, not switches.</h2>
+      <p class="lede">
+        A fire doesn't go out the moment you stop feeding it — it cools, gradually, and you can always throw another
+        log on before it's ash. That's the whole model behind Ember: every friendship gets a
+        <strong>Friend Health Score</strong> that cools the longer it's been since you last connected, and warms
+        right back up the moment you reach out.
+      </p>
+      <div class="ember-scale">
+        <div class="scale-item" style="--c: var(--hot)"><span>🔥</span><b>100%</b><small>Thriving</small></div>
+        <div class="scale-item" style="--c: var(--gold)"><span>🌤️</span><b>70%</b><small>Steady</small></div>
+        <div class="scale-item" style="--c: var(--amber)"><span>🌥️</span><b>45%</b><small>Cooling</small></div>
+        <div class="scale-item" style="--c: var(--cold)"><span>🥶</span><b>20%</b><small>Fading</small></div>
+        <div class="scale-item" style="--c: var(--ice)"><span>🧊</span><b>5%</b><small>Cold</small></div>
+      </div>
+    </section>
+
+    <section id="how" class="section reveal">
+      <p class="eyebrow">how it works</p>
+      <h2>Three moves, no busywork.</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <h3>Set your circle</h3>
+          <p>Add the people you don't want to lose — bestie, close friend, family, whatever cadence feels right for each one.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <h3>Ember watches the temperature</h3>
+          <p>Every friendship's score quietly cools the longer it's been — no guilt trips, just an honest number.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <h3>Get nudged before it's cold</h3>
+          <p>A plain-language nudge — "send one text" — shows up before the friendship needs a whole reunion to fix.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="build" class="section reveal">
+      <p class="eyebrow">under the hood</p>
+      <h2>Built small, built private, built fast.</h2>
+      <p class="lede">
+        Ember is vanilla HTML, CSS, and JavaScript — no framework, no build step, no backend. Every friend, every
+        check-in, every score lives only in your browser's local storage. Nothing is ever sent anywhere, which means
+        there's nothing to leak and nothing to subscribe to.
+      </p>
+      <div class="glass-row">
+        <div class="glass-card">
+          <span class="glass-emoji">🔐</span>
+          <h3>100% local</h3>
+          <p>No account, no server, no analytics. Your circle stays on your device.</p>
+        </div>
+        <div class="glass-card">
+          <span class="glass-emoji">⚡</span>
+          <h3>Zero dependencies</h3>
+          <p>No npm install, no bundler — open the file and it works.</p>
+        </div>
+        <div class="glass-card">
+          <span class="glass-emoji">📦</span>
+          <h3>Portable data</h3>
+          <p>One-tap JSON backup and CSV export whenever you want a copy.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta reveal">
+      <h2>Someone in your circle is cooling off right now.</h2>
+      <a href="index.html" class="btn-hero primary big">Open Ember and check your circle →</a>
+    </section>
+  </main>
+
+  <footer class="story-footer">
+    <p class="footer-name">Built by Maher Khan</p>
+    <p class="footer-tag">AI educator &amp; no-code builder · digimarketingstudio.com</p>
+    <div class="footer-links">
+      <a href="https://linkedin.com/in/mahersocialmediastrategistus" target="_blank" rel="noopener">LinkedIn</a>
+      <span>·</span>
+      <a href="https://github.com/maherkhan-builds" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </footer>
+
+  <script src="story.js"></script>
+</body>
+</html>
