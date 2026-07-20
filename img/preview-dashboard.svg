@@ -1,0 +1,151 @@
+<svg viewBox="0 0 1280 760" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, system-ui, sans-serif">
+  <defs>
+    <radialGradient id="blobA" cx="10%" cy="0%" r="55%">
+      <stop offset="0%" stop-color="#ff5d3d" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#ff5d3d" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blobB" cx="95%" cy="100%" r="55%">
+      <stop offset="0%" stop-color="#6fb8ff" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#6fb8ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffc94d"/>
+      <stop offset="50%" stop-color="#ff5d3d"/>
+      <stop offset="100%" stop-color="#ff6b9d"/>
+    </linearGradient>
+    <linearGradient id="barBanner" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffc94d"/>
+      <stop offset="50%" stop-color="#ff5d3d"/>
+      <stop offset="100%" stop-color="#ff6b9d"/>
+    </linearGradient>
+    <linearGradient id="hotBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff9d4d"/><stop offset="100%" stop-color="#ff5d3d"/>
+    </linearGradient>
+    <linearGradient id="amberBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffc94d"/><stop offset="100%" stop-color="#ff9d4d"/>
+    </linearGradient>
+    <linearGradient id="coldBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9ad4ff"/><stop offset="100%" stop-color="#6fb8ff"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="760" fill="#0a0908"/>
+  <rect width="1280" height="760" fill="url(#blobA)"/>
+  <rect width="1280" height="760" fill="url(#blobB)"/>
+
+  <!-- story banner -->
+  <rect x="0" y="0" width="1280" height="34" fill="url(#barBanner)"/>
+  <text x="640" y="22" text-anchor="middle" font-size="14" font-weight="700" fill="#1a0800">📖 read the story behind Ember — how it works &amp; why it exists →</text>
+
+  <!-- topbar -->
+  <text x="48" y="96" font-size="42" font-weight="800" fill="url(#titleGrad)">🔥 Ember</text>
+  <text x="48" y="122" font-size="15" fill="#a89e93">friendships fade quietly — don't let yours go cold ✨</text>
+
+  <rect x="900" y="66" width="110" height="40" rx="20" fill="#ffffff0d" stroke="#ffffff17"/>
+  <text x="955" y="91" text-anchor="middle" font-size="13" fill="#f7f3ee">📋 report</text>
+  <rect x="1020" y="66" width="110" height="40" rx="20" fill="#ffffff0d" stroke="#ffffff17"/>
+  <text x="1075" y="91" text-anchor="middle" font-size="13" fill="#f7f3ee">⬇️ export</text>
+
+  <!-- stat cards -->
+  <g font-size="12" fill="#a89e93">
+    <rect x="48" y="150" width="280" height="96" rx="20" fill="#ffffff0c" stroke="#ffffff17"/>
+    <text x="70" y="180">circle health</text>
+    <text x="70" y="212" font-size="30" font-weight="800" fill="#ff5d3d">59%</text>
+    <text x="70" y="232" fill="#a89e93">🌤️ Steady</text>
+
+    <rect x="344" y="150" width="280" height="96" rx="20" fill="#ffffff0c" stroke="#ffffff17"/>
+    <text x="366" y="180">friends tracked</text>
+    <text x="366" y="212" font-size="30" font-weight="800" fill="#ffc94d">4</text>
+    <text x="366" y="232" fill="#a89e93">people in your circle</text>
+
+    <rect x="640" y="150" width="280" height="96" rx="20" fill="#ffffff0c" stroke="#ffffff17"/>
+    <text x="662" y="180">thriving</text>
+    <text x="662" y="212" font-size="30" font-weight="800" fill="#ffc94d">2</text>
+    <text x="662" y="232" fill="#a89e93">🔥 scoring 80+</text>
+
+    <rect x="936" y="150" width="296" height="96" rx="20" fill="#ffffff0c" stroke="#ffffff17"/>
+    <text x="958" y="180">needs attention</text>
+    <text x="958" y="212" font-size="30" font-weight="800" fill="#6fb8ff">1</text>
+    <text x="958" y="232" fill="#a89e93">🥶 fading or cold</text>
+  </g>
+
+  <!-- alert strip -->
+  <rect x="48" y="270" width="1184" height="52" rx="20" fill="#6fb8ff1f" stroke="#6fb8ff59"/>
+  <text x="72" y="302" font-size="14" fill="#e9f4ff"><tspan font-weight="700" fill="#9ad4ff">🧊 1 friendship going cold: </tspan>Jordan — a quick check-in would go a long way.</text>
+
+  <!-- friend cards -->
+  <!-- card 1: Jordan, fading -->
+  <g>
+    <rect x="48" y="346" width="368" height="360" rx="22" fill="#ffffff0c" stroke="#6fb8ff59"/>
+    <circle cx="94" cy="392" r="23" fill="#6fb8ff2e" stroke="#6fb8ff59"/>
+    <text x="94" y="399" text-anchor="middle" font-size="20">🎧</text>
+    <text x="130" y="390" font-size="17" font-weight="700" fill="#f7f3ee">Jordan</text>
+    <text x="130" y="410" font-size="12" fill="#a89e93">🩵 friend · 79 days ago</text>
+    <text x="416" y="392" text-anchor="end" font-size="13" font-weight="700" fill="#6fb8ff">🥶 Fading</text>
+
+    <rect x="70" y="440" width="324" height="8" rx="4" fill="#ffffff14"/>
+    <rect x="70" y="440" width="39" height="8" rx="4" fill="url(#coldBar)"/>
+    <text x="70" y="468" font-size="13" font-weight="800" fill="#6fb8ff">12%</text>
+    <text x="394" y="468" text-anchor="end" font-size="12" fill="#a89e93">every ~30d</text>
+
+    <text x="70" y="500" font-size="12" fill="#a89e93">
+      <tspan x="70" dy="0">They're fading from your radar —</tspan>
+      <tspan x="70" dy="18">reach out before it goes quiet for good.</tspan>
+    </text>
+
+    <rect x="70" y="660" width="140" height="38" rx="19" fill="url(#hotBar)"/>
+    <text x="140" y="684" text-anchor="middle" font-size="12" font-weight="700" fill="#1a0800">✅ check in</text>
+    <rect x="222" y="660" width="100" height="38" rx="19" fill="#ffffff0d" stroke="#ffffff17"/>
+    <text x="272" y="684" text-anchor="middle" font-size="12" fill="#f7f3ee">✏️ edit</text>
+  </g>
+
+  <!-- card 2: Priya, cooling -->
+  <g>
+    <rect x="440" y="346" width="368" height="360" rx="22" fill="#ffffff0c" stroke="#ff9d4d59"/>
+    <circle cx="486" cy="392" r="23" fill="#ff9d4d2e" stroke="#ff9d4d59"/>
+    <text x="486" y="399" text-anchor="middle" font-size="20">🌙</text>
+    <text x="522" y="390" font-size="17" font-weight="700" fill="#f7f3ee">Priya</text>
+    <text x="522" y="410" font-size="12" fill="#a89e93">🧡 close friend · 22 days ago</text>
+    <text x="808" y="392" text-anchor="end" font-size="13" font-weight="700" fill="#ff9d4d">🌥️ Cooling</text>
+
+    <rect x="462" y="440" width="324" height="8" rx="4" fill="#ffffff14"/>
+    <rect x="462" y="440" width="120" height="8" rx="4" fill="url(#amberBar)"/>
+    <text x="462" y="468" font-size="13" font-weight="800" fill="#ff9d4d">37%</text>
+    <text x="786" y="468" text-anchor="end" font-size="12" fill="#a89e93">every ~14d</text>
+
+    <text x="462" y="500" font-size="12" fill="#a89e93">
+      <tspan x="462" dy="0">Starting to cool off. Send something</tspan>
+      <tspan x="462" dy="18">that made you think of them.</tspan>
+    </text>
+
+    <rect x="462" y="660" width="140" height="38" rx="19" fill="url(#hotBar)"/>
+    <text x="532" y="684" text-anchor="middle" font-size="12" font-weight="700" fill="#1a0800">✅ check in</text>
+    <rect x="614" y="660" width="100" height="38" rx="19" fill="#ffffff0d" stroke="#ffffff17"/>
+    <text x="664" y="684" text-anchor="middle" font-size="12" fill="#f7f3ee">✏️ edit</text>
+  </g>
+
+  <!-- card 3: Zara, thriving -->
+  <g>
+    <rect x="832" y="346" width="368" height="360" rx="22" fill="#ffffff0c" stroke="#ff5d3d59"/>
+    <circle cx="878" cy="392" r="23" fill="#ff5d3d2e" stroke="#ff5d3d59"/>
+    <text x="878" y="399" text-anchor="middle" font-size="20">💫</text>
+    <text x="914" y="390" font-size="17" font-weight="700" fill="#f7f3ee">Zara</text>
+    <text x="914" y="410" font-size="12" fill="#a89e93">💛 bestie · 1 day ago</text>
+    <text x="1200" y="392" text-anchor="end" font-size="13" font-weight="700" fill="#ff5d3d">🔥 Thriving</text>
+
+    <rect x="854" y="440" width="324" height="8" rx="4" fill="#ffffff14"/>
+    <rect x="854" y="440" width="304" height="8" rx="4" fill="url(#hotBar)"/>
+    <text x="854" y="468" font-size="13" font-weight="800" fill="#ff5d3d">94%</text>
+    <text x="1178" y="468" text-anchor="end" font-size="12" fill="#a89e93">every ~5d</text>
+
+    <text x="854" y="500" font-size="12" fill="#a89e93">
+      <tspan x="854" dy="0">Strong and warm — keep doing</tspan>
+      <tspan x="854" dy="18">whatever you're doing. 🔥</tspan>
+    </text>
+
+    <rect x="854" y="660" width="140" height="38" rx="19" fill="url(#hotBar)"/>
+    <text x="924" y="684" text-anchor="middle" font-size="12" font-weight="700" fill="#1a0800">✅ check in</text>
+    <rect x="1006" y="660" width="100" height="38" rx="19" fill="#ffffff0d" stroke="#ffffff17"/>
+    <text x="1056" y="684" text-anchor="middle" font-size="12" fill="#f7f3ee">✏️ edit</text>
+  </g>
+</svg>

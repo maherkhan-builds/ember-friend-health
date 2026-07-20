@@ -1,0 +1,63 @@
+<svg viewBox="0 0 1280 640" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <radialGradient id="glowA" cx="50%" cy="0%" r="60%">
+      <stop offset="0%" stop-color="#ff5d3d" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#ff5d3d" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="90%" cy="100%" r="55%">
+      <stop offset="0%" stop-color="#6fb8ff" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#6fb8ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="emGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff5d3d"/>
+      <stop offset="100%" stop-color="#ffc94d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="640" fill="#07060a"/>
+  <rect width="1280" height="640" fill="url(#glowA)"/>
+  <rect width="1280" height="640" fill="url(#glowB)"/>
+
+  <text x="640" y="130" text-anchor="middle" font-size="15" letter-spacing="4" fill="#ff9d4d" font-family="Segoe UI, sans-serif" font-weight="700">A CASE STUDY</text>
+
+  <text x="640" y="230" text-anchor="middle" font-size="64" fill="#f6f2ee">Friendships don't end.</text>
+  <text x="640" y="310" text-anchor="middle" font-size="64" font-style="italic" fill="url(#emGrad)">They fade.</text>
+
+  <text x="640" y="370" text-anchor="middle" font-size="18" fill="#a79f9a" font-family="Segoe UI, sans-serif">
+    <tspan x="640" dy="0">No fight, no falling out — just a text that never got sent, then</tspan>
+    <tspan x="640" dy="26">another, then a year. Ember catches the fade before it finishes.</tspan>
+  </text>
+
+  <!-- ember scale row -->
+  <g font-family="Segoe UI, sans-serif">
+    <g transform="translate(220,440)">
+      <rect width="150" height="120" rx="20" fill="#ffffff0a" stroke="#ff5d3d3d"/>
+      <text x="75" y="46" text-anchor="middle" font-size="26">🔥</text>
+      <text x="75" y="78" text-anchor="middle" font-size="20" font-weight="800" fill="#ff5d3d">100%</text>
+      <text x="75" y="100" text-anchor="middle" font-size="12" fill="#a79f9a">Thriving</text>
+    </g>
+    <g transform="translate(390,440)">
+      <rect width="150" height="120" rx="20" fill="#ffffff0a" stroke="#ffc94d3d"/>
+      <text x="75" y="46" text-anchor="middle" font-size="26">🌤️</text>
+      <text x="75" y="78" text-anchor="middle" font-size="20" font-weight="800" fill="#ffc94d">70%</text>
+      <text x="75" y="100" text-anchor="middle" font-size="12" fill="#a79f9a">Steady</text>
+    </g>
+    <g transform="translate(560,440)">
+      <rect width="150" height="120" rx="20" fill="#ffffff0a" stroke="#ff9d4d3d"/>
+      <text x="75" y="46" text-anchor="middle" font-size="26">🌥️</text>
+      <text x="75" y="78" text-anchor="middle" font-size="20" font-weight="800" fill="#ff9d4d">45%</text>
+      <text x="75" y="100" text-anchor="middle" font-size="12" fill="#a79f9a">Cooling</text>
+    </g>
+    <g transform="translate(730,440)">
+      <rect width="150" height="120" rx="20" fill="#ffffff0a" stroke="#6fb8ff3d"/>
+      <text x="75" y="46" text-anchor="middle" font-size="26">🥶</text>
+      <text x="75" y="78" text-anchor="middle" font-size="20" font-weight="800" fill="#6fb8ff">20%</text>
+      <text x="75" y="100" text-anchor="middle" font-size="12" fill="#a79f9a">Fading</text>
+    </g>
+    <g transform="translate(900,440)">
+      <rect width="150" height="120" rx="20" fill="#ffffff0a" stroke="#9ad4ff3d"/>
+      <text x="75" y="46" text-anchor="middle" font-size="26">🧊</text>
+      <text x="75" y="78" text-anchor="middle" font-size="20" font-weight="800" fill="#9ad4ff">5%</text>
+      <text x="75" y="100" text-anchor="middle" font-size="12" fill="#a79f9a">Cold</text>
+    </g>
+  </g>
+</svg>
