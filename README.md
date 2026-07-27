@@ -5,10 +5,15 @@
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-ember--nine--omega.vercel.app-FF5D3D?style=for-the-badge&logo=vercel&logoColor=white)](https://ember-nine-omega.vercel.app)
 [![Read the Story](https://img.shields.io/badge/Read%20the-Story-FFC94D?style=for-the-badge&logo=readme&logoColor=1A0800)](https://ember-nine-omega.vercel.app/story.html)
 [![License: MIT](https://img.shields.io/github/license/maherkhan-builds/ember-friend-health?style=for-the-badge&color=6FB8FF)](LICENSE)
+[![Status](https://img.shields.io/badge/Status-Live-6FB8FF?style=for-the-badge)](https://ember-nine-omega.vercel.app)
 
 <a href="https://ember-nine-omega.vercel.app">
   <img src="https://readme-typing-svg.demolab.com/?font=Georgia&size=24&duration=2800&pause=900&color=FF9D4D&center=true&vCenter=true&width=780&lines=Friendships+don%27t+end.+They+fade.;Rate+the+health+of+every+friendship+%F0%9F%94%A5;Get+nudged+before+someone+goes+cold+%F0%9F%A5%B6;100%25+local.+Zero+backend.+Zero+tracking.+%F0%9F%94%92" alt="animated tagline" />
 </a>
+
+<p><strong>A Friend Health Score tracker that nudges you before adult friendships go cold — vanilla JS, 100% local, zero backend.</strong></p>
+
+[Live Demo](https://ember-nine-omega.vercel.app) · [Features](#-features) · [Quick Start](#-run-it-locally) · [How It Works](#-how-the-score-works)
 
 </div>
 
@@ -119,6 +124,10 @@ Then open the printed URL — or just double-click `index.html`.
 - [ ] Custom domain
 
 <br/>
+
+## 🔎 Keywords
+
+`friend-health-score` · `friendship-tracker` · `relationship-tracker` · `personal-crm-for-friends` · `habit-tracker` · `reminder-app` · `social-wellness` · `mental-wellness` · `gen-z-app` · `vanilla-javascript` · `localstorage-app` · `privacy-first` · `glassmorphism-ui` · `static-site`
 
 ## 📄 License
 
